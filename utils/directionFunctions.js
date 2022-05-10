@@ -28,6 +28,7 @@ async function getDirection(from, to) {
     .catch(function (error) {
       console.log(error);
     });
+    return directions;
 }
 
 module.exports = {
