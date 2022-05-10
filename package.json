@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sarudiana18/CloudProject#readme",
   "dependencies": {
+    "@google-cloud/vision": "^2.4.2",
     "@sendgrid/mail": "^7.6.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",

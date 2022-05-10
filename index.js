@@ -19,3 +19,6 @@ const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log(`Cloud project app listenng on port ${port}!`)
 });
+
+// const {sendMail} = require("./utils/mailFunctions.js");
+// sendMail("sarudiana18@stud.ase.ro", "sarudiana18@stud.ase.ro", "TestSubject", "TestMessage");
