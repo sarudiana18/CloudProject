@@ -126,7 +126,7 @@ router.post("/direction", async (req, res) => {
             receiverMail,
             senderMail,
             directionMessage,
-            `${senderName} has sent you a message`
+            `${senderName} has sent you a direction info`
         );
 
         connection.query(
