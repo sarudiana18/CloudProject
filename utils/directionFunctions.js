@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const directionAPIKey = process.env.DIRECTION_API_KEY;
+
 function createConfig(from, to) {
     return config = {
         method: 'get',
