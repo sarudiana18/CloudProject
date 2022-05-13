@@ -1,16 +1,12 @@
 var axios = require('axios');
+const dotenv = require("dotenv");
+dotenv.config();
 
-// var config = {
-//   method: 'get',
-//   url: 'https://maps.googleapis.com/maps/api/directions/json?origin=Bucuresti&destination=Sibiu&key=AIzaSyAd-BWZMuhkpFLFhvQ-gKpq6qesmiRtsaI',
-//   headers: { }
-// };
-
-
+const directionAPIKey = process.env.DIRECTION_API_KEY;
 function createConfig(from, to) {
     return config = {
         method: 'get',
-        url: `https://maps.googleapis.com/maps/api/directions/json?origin=${from}&destination=${to}&key=AIzaSyAd-BWZMuhkpFLFhvQ-gKpq6qesmiRtsaI`,
+        url: `https://maps.googleapis.com/maps/api/directions/json?origin=${from}&destination=${to}&key=${directionAPIKey}`,
         headers: { }
       };
 
