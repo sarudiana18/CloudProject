@@ -85,5 +85,10 @@ https://sendgrid.com/why-sendgrid/
 # Publicare: linkuri
 Backend: https://dashboard.heroku.com/apps/rocky-citadel-84785
 
+https://git.heroku.com/rocky-citadel-84785.git
+
 Frontend: https://dashboard.heroku.com/apps/lit-headland-74393 
+
+https://git.heroku.com/lit-headland-74393.git 
+
 <img width="960" alt="2022-05-14" src="https://user-images.githubusercontent.com/105063916/168442393-4a498b8a-3650-4327-9d46-daf161d6f3df.png">
