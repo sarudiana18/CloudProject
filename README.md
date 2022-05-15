@@ -45,7 +45,9 @@ Aducerea tuturor mesajelor existente se face prin metoda get de http pentru serv
 <img width="785" alt="2022-05-14 (2)" src="https://user-images.githubusercontent.com/105063916/168442342-bb3684b6-9056-4714-a534-d203b78510e6.png">
 
 Request-ul pentru aducerea detaliilor de calatorie se va face printr-un POST de aceasta data, deoarece, avand un body, se va insera in baza de date o noua inregistrare.  
+
  In primul rand, se va apela functia getDirection care utilizeaza DirectionsAPI (implicit un DirectionAPIKey folosit in request-ul de get) pentru aducerea unui fisier json, din care extragem durata toata si distanta toatala. 
+ 
   Se va crea un mesaj cu raspunsul primit, pentru a fi introdusa inregistrarea in baza de date si pentru a trimite mailul prin Api-ul specific SendGrid (implicit fiind necesar un SendGridApiKey). 
 
 <img width="881" alt="2022-05-14 (3)" src="https://user-images.githubusercontent.com/105063916/168442366-628c3ab7-b7bd-4aab-9141-604c63ffae1a.png">
@@ -69,14 +71,19 @@ Exemplu de request pentru DirectionsAPI: este un request de tipul get, ca in urm
 	DirectionsAPI: Get;
 	MessagesRouter: PUT, POST, GET, GET(/:id), DELETE(/:id), POST (/direction)
 	UtilsRouter: POST (/directionInfo), POST (/send)
-  
+ # Link video:
+ 
+ 
 # Linkuri github:
 https://github.com/sarudiana18/CloudProject-Front - frontend
+
 https://github.com/sarudiana18/CloudProject - backend
 # Referinte:
 https://developers.google.com/maps/documentation/directions/start
+
 https://sendgrid.com/why-sendgrid/
 # Publicare: linkuri
 Backend: https://dashboard.heroku.com/apps/rocky-citadel-84785
+
 Frontend: https://dashboard.heroku.com/apps/lit-headland-74393 
 <img width="960" alt="2022-05-14" src="https://user-images.githubusercontent.com/105063916/168442393-4a498b8a-3650-4327-9d46-daf161d6f3df.png">
